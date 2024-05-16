@@ -103,6 +103,10 @@
  			weatherIcon.src = "images/mist.png";
 
  	    }
+			else if(data.weather[0].main == "snow"){
+ 			weatherIcon.src = "images/snow.png";
+
+ 	    }
 
  	     document.querySelector(".Weather").style.display= "block";
  	     document.querySelector(".error").style.display= "none";
