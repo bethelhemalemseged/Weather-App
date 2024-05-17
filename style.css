@@ -106,6 +106,14 @@ body{
 	font-size: 28px;
 	margin-top: -6px;
 }
+.sunset, .sunrise{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.visibility, .pressure{
+	font-size: 28px;
+	margin-top: -6px;
+}
 .Weather{
 	display: none;
 }
