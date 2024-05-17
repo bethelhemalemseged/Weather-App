@@ -114,6 +114,10 @@ body{
 	font-size: 28px;
 	margin-top: -6px;
 }
+.Air-Quality-Index, .Real-Feel{
+	font-size: 28px;
+	margin-top: -6px;
+}
 .Weather{
 	display: none;
 }
