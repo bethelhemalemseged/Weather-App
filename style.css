@@ -98,7 +98,11 @@ body{
 	font-size: 28px;
 	margin-top: -6px;
 }
-.Clouds, .Rain{
+.snow, .rain{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.drizzle, .cloud{
 	font-size: 28px;
 	margin-top: -6px;
 }
