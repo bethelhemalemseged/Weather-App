@@ -82,6 +82,29 @@ body{
 	align-items: center;
 	text-align: left;
 }
+.details{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 50px;
+	gap: 20px;
+
+}
+.col{
+	display: flex;
+	align-items: center;
+	text-align: left;
+	width: 250px;
+	height: 150px;
+	border-radius: 20px;
+	color: #fff;
+	background-color: #1a1a1a;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 .col img{
 	width: 40px;
 	margin-right: 10px;
@@ -91,7 +114,23 @@ body{
 	font-size: 28px;
 	margin-top: -6px;
 }
-.Clouds, .Rain{
+.snow, .rain{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.drizzle, .cloud{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.sunset, .sunrise{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.visibility, .pressure{
+	font-size: 28px;
+	margin-top: -6px;
+}
+.Air-Quality-Index, .Real-Feel{
 	font-size: 28px;
 	margin-top: -6px;
 }
