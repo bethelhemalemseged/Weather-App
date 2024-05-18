@@ -1,11 +1,11 @@
-{
+html{
 	margin: 0;
 	padding: 0;
 	font-family: 'poppins',sans-serif;
 	box-sizing: border-box;
 }
 body{
-	background: #222;
+	background: src="images/sunny.jpg";
 }
 .card{
 	width: 90%;
@@ -46,7 +46,7 @@ body{
 
 }
 .search button img{
-	width: 16px;
+	width: 25px;
 }
 .Weather-icon{
 	width: 170px;
@@ -62,25 +62,6 @@ body{
 	font-size: 45px;
 	font-weight: 400;
 	margin-top: -10px;
-}
-.details{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
-	margin-top: 50px;
-}
-.detail{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
-	margin-top: 50px;
-}
-.col{
-	display: flex;
-	align-items: center;
-	text-align: left;
 }
 .details{
 	display: flex;
@@ -106,7 +87,7 @@ body{
 	justify-content: space-between;
 }
 .col img{
-	width: 40px;
+	width: 60px;
 	margin-right: 10px;
 }
 
@@ -130,10 +111,11 @@ body{
 	font-size: 28px;
 	margin-top: -6px;
 }
-.Air-Quality-Index, .Real-Feel{
+.Air-Quality-Index, .tempreture{
 	font-size: 28px;
 	margin-top: -6px;
 }
+
 .Weather{
 	display: none;
 }
@@ -143,5 +125,4 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
-}
 }
