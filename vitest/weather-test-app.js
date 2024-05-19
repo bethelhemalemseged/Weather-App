@@ -1,11 +1,15 @@
-import checkweather from './script.js';
+import mock from '/node_modules';
+import vitest from '/node_modules';
+import checkweather from 'script.js';
+
+
 const { checkweather } = require('weather-app');
 
 global.fetch = vitest.fn(() =>
   Promise.resolve({
     status: 200,
     json: () => Promise.resolve({
-      name: 'Seattle', // Example city name
+      name: 'mekele', // Example city name
       main: {
         temp: 15, // Example temperature
         humidity: 70, // Example humidity
@@ -13,18 +17,18 @@ global.fetch = vitest.fn(() =>
       wind: {
         speed: 10, // Example wind speed
       },
-      weather: [{ main: 'Clouds' }], // Example weather condition
+      weather: [{ main: 'Snowy' }], // Example weather condition
     }),
   })
 );
 
 describe('checkweather function', () => {
   it('fetches weather data for a valid city', async () => {
-    const city = 'Seattle'; // Example city name
+    const city = 'Mekele'; // Example city name
     const result = await checkweather(city);
 
 
-    expect(document.querySelector('.city').innerHTML).toBe('Seattle');
+    expect(document.querySelector('.city').innerHTML).toBe('Mekele');
     expect(document.querySelector('.temp').innerHTML).toBe('15°C');
     expect(document.querySelector('.humidity').innerHTML).toBe('70%');
     expect(document.querySelector('.wind').innerHTML).toBe('10km/h');
