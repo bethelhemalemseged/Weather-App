@@ -1,4 +1,5 @@
 import checkweather from './script.js';
+import{describe,it,expect};
 const { checkweather } = require('weather-app');
 
 global.fetch = vitest.fn(() =>
