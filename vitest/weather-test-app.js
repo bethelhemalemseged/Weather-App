@@ -1,8 +1,4 @@
-import mock from '/node_modules';
-import vitest from '/node_modules';
-import checkweather from 'script.js';
-
-
+import checkweather from './script.js';
 const { checkweather } = require('weather-app');
 
 global.fetch = vitest.fn(() =>
